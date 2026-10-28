@@ -26,11 +26,10 @@ def tower_of_hanoi(n, source, auxiliary, destination, pegs):
     tower_of_hanoi(n - 1, auxiliary, source, destination, pegs)
 
 
-n = 3
-
+n = int(input("Enter the number of disks: "))
 
 pegs = [
-    [3, 2, 1],   # Source
+    list(range(n, 0, -1)),   # Source
     [],          # Auxiliary
     []           # Destination
 ]
